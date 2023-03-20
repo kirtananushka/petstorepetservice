@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: aks-petstorepetservice
-        image: azurepetstorecr.azurecr.io/petstorepetservice:latest
+        image: tananushkapetstorecr.azurecr.io/petstorepetservice:latest
         ports:
         - containerPort: 80
         env:
@@ -24,7 +24,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: aks-petstorepetservice 
+  name: aks-petstorepetservice
 spec:
   type: ClusterIP
   ports:
