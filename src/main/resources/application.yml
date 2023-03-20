@@ -399,3 +399,8 @@ data:
         - id: 2
           name: "small"
       status: "available"
+
+azure:
+  application-insights:
+    instrumentation-key: ${APPINSIGHTS_INSTRUMENTATIONKEY}
+
