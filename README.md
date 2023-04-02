@@ -5,9 +5,9 @@ The project/API Scaffolding was generated using Swagger Codegen https://github.c
 ```
   java -jar swagger-codegen-cli-2.4.9.jar generate \
   -i petstorepetservice.json \
-  --api-package com.chtrembl.petstore.pet.api \
-  --model-package com.chtrembl.petstore.pet.model \
-  --group-id com.chtrembl.petstore.pet \
+  --api-package com.chtrembl.petstore.petDto.api \
+  --model-package com.chtrembl.petstore.petDto.model \
+  --group-id com.chtrembl.petstore.petDto \
   --artifact-id petstorepetservice \
   --artifact-version 0.0.1-SNAPSHOT \
   -l spring \
@@ -29,8 +29,10 @@ Test endpoints:
 
 GET Request for service info (No headers needed)
 
-```http://localhost:8081/petstorepetservice/v2/pet/info```
+```http://localhost:8081/petstorepetservice/v2/petDto/info```
 
 GET request for Pets (Accept: application/json and Content-Type: application/json headers needed)
 
-```http://localhost:8081/petstorepetservice/v2/pet/findByStatus?status=available```
+```http://localhost:8081/petstorepetservice/v2/petDto/findByStatus?status=available```
+
+APPINSIGHTS_INSTRUMENTATIONKEY="";DB_LOGIN=root;DB_PASSWORD=root;DB_IP=localhost
